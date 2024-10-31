@@ -1,0 +1,13 @@
+<div class="chat-window">
+  <div *ngIf="selectedPrompt" class="prompt-display">
+    <strong>Prompt:</strong> {{ selectedPrompt }}
+  </div>
+
+  <!-- Scrollable message list container -->
+  <div class="message-list-container">
+    <app-message-list [messages]="messages"></app-message-list>
+  </div>
+
+  <!-- Chat input area -->
+  <app-chat-input (sendMessage)="sendMessage($event)"></app-chat-input>
+</div>

@@ -1,0 +1,29 @@
+.message {
+  display: flex;
+  width: 100%; 
+  margin-bottom: 5px;
+}
+
+.user-message, .ai-message {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 60%;
+  word-wrap: break-word;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+/* User message: aligned right */
+.user-message {
+  background-color: #d0f0c0;
+  margin-left: auto;
+  text-align: left;
+}
+
+/* AI message: aligned left */
+.ai-message {
+  background-color: #f0f0f0;
+  margin-right: auto;
+  text-align: left;
+}

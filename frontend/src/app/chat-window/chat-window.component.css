@@ -1,0 +1,27 @@
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .prompt-display {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e0f7fa;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .message-list-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 10px;
+  }
+  
+  app-message-list {
+    display: block;
+  }

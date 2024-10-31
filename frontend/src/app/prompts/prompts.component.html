@@ -1,0 +1,9 @@
+<div class="prompts-container">
+    <h2>Select a Prompt:</h2>
+    <div class="prompt-buttons">
+      <button *ngFor="let prompt of prompts" (click)="selectPrompt(prompt)">
+        {{ prompt }}
+      </button>
+    </div>
+  </div>
+  
